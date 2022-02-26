@@ -22,6 +22,13 @@ const modalPostBtn = document.querySelector('.modal-header button');
 const modalFooterPlus = document.querySelector('.modal-footer span')
 const modalInput = document.querySelector('.modal-input');
 
+
+const user = document.querySelector('.user');
+const sidebar = document.querySelector('.sidebar');
+const sidebarWrapper = document.querySelector('.sidebar-wrapper');
+
+const xBtn = document.querySelector('.sidebar-header i');
+
 /********************************************/
 // main page
 const goToLoginPage = () => {
@@ -102,4 +109,15 @@ modalInput.addEventListener('blur', (e)=>{
     if(e.target.value === ""){
         changeOpacity(0.5);
     }
+})
+
+// Sidebar
+user.addEventListener('click', ()=>{
+    sidebar.classList.add('sidebar-display');
+    sidebarWrapper.classList.add('sidebar-wrapper-display');
+})
+
+xBtn.addEventListener('click', ()=>{
+    sidebar.classList.remove('sidebar-display');
+    sidebarWrapper.classList.remove('sidebar-wrapper-display');
 })
