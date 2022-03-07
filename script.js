@@ -23,6 +23,33 @@ const circle = document.querySelector('.circle');
 /**************************************/
 /**************************************/
 
+// Pages Navigation
+const pagesNavigationToMainPage = document.querySelector('.pages-navigation ul li:nth-child(2)')
+pagesNavigationToMainPage.addEventListener('click', ()=>{
+	goToMainPage();
+})
+const pagesNavigationToLoginPage = document.querySelector('.pages-navigation ul li:nth-child(3)')
+pagesNavigationToLoginPage.addEventListener('click', ()=>{
+	goToLoginPage();
+})
+const pagesNavigationToFeedsPage = document.querySelector('.pages-navigation ul li:nth-child(4)')
+pagesNavigationToFeedsPage.addEventListener('click', ()=>{
+	goToFeedsPage();
+})
+
+const goToMainPage = () => {
+	mainPage.style.display = 'grid';
+	newsFeedPage.style.display = 'none';
+	loginPage.style.display = 'none';
+};
+const goToFeedsPage = () => {
+	newsFeedPage.style.display = 'block';
+	loginPage.style.display = 'none';
+	mainPage.style.display = 'none';
+};
+// end of Pages Navigation
+
+
 // Main page
 const goToLoginPage = () => {
 	mainPage.style.display = 'none';
