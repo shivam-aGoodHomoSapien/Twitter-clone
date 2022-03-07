@@ -1,7 +1,10 @@
-" Welcome to the Twitter-clone project "
+" Welcome to the Twitter-UI-clone project "
 
-Designed using -
-
+Designed using :
 -- Html
 -- Css
--- Javascript --
+-- Javascript
+
+
+Deployed at :
+https://twitter-ui-clone-html-css-js.netlify.app/
